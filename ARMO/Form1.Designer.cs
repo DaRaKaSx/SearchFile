@@ -44,6 +44,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBoxFileName = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // treeView1
@@ -186,11 +187,22 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(676, 179);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(108, 26);
+            this.button4.TabIndex = 14;
+            this.button4.Text = "Продолжить";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 473);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBoxFileName);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -233,6 +245,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBoxFileName;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button4;
     }
 }
 
