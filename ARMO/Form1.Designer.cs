@@ -45,6 +45,9 @@
             this.textBoxFileName = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.button4 = new System.Windows.Forms.Button();
+            this.textBoxSymbol = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // treeView1
@@ -169,7 +172,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(348, 78);
+            this.label5.Location = new System.Drawing.Point(345, 84);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 18);
             this.label5.TabIndex = 12;
@@ -181,6 +184,7 @@
             this.textBoxFileName.Name = "textBoxFileName";
             this.textBoxFileName.Size = new System.Drawing.Size(305, 24);
             this.textBoxFileName.TabIndex = 13;
+            this.textBoxFileName.MouseMove += new System.Windows.Forms.MouseEventHandler(this.textBoxFileName_MouseMove);
             // 
             // timer1
             // 
@@ -197,11 +201,34 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // textBoxSymbol
+            // 
+            this.textBoxSymbol.Location = new System.Drawing.Point(458, 28);
+            this.textBoxSymbol.Name = "textBoxSymbol";
+            this.textBoxSymbol.Size = new System.Drawing.Size(305, 24);
+            this.textBoxSymbol.TabIndex = 15;
+            this.textBoxSymbol.MouseMove += new System.Windows.Forms.MouseEventHandler(this.textBoxSymbol_MouseMove);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(345, 34);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 18);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Символы";
+            // 
+            // toolTip1
+            // 
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1070, 473);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBoxSymbol);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.textBoxFileName);
             this.Controls.Add(this.label5);
@@ -220,7 +247,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "SearchFile";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -246,6 +273,9 @@
         private System.Windows.Forms.TextBox textBoxFileName;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBoxSymbol;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 
